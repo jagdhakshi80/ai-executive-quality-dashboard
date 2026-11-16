@@ -1171,3 +1171,4 @@ Guiding principle: AI augments quality engineering expertise; engineering and bu
 Disclaimer
 
 This is a demonstration project using synthetic data. Risk scoring and AI recommendations are illustrative and must be validated against real organizational requirements before production use.  # ai-executive-quality-dashboard
+# ai-executive-quality-dashboard
