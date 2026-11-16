@@ -1,5 +1,95 @@
 ##EXEC DASHBOARD
 
+***RUN TEST
+python -m pytest tests/ -v
+python -m pytest tests/test_risk_engine.py::test_medium_risk -v
+
+python -m pytest tests/ -v
+ruff check .
+
+python -m pytest tests/ -v
+
+python -m compileall -q app.py src config tests
+
+streamlit run app.py
+***
+
+Project delivery roadmap
+Automated unit testing
+
+Previous milestone
+Validate all 10 tests pass.
+
+Launch Streamlit dashboard
+
+Next
+Start application and validate the executive dashboard.
+
+Functional testing
+
+CSV upload
+
+KPI calculations
+
+Defect trend charts
+
+Risk assessment
+
+Report downloads
+
+OpenAI integration
+
+Generate executive summaries
+
+AI recommendations
+
+Error handling and fallback
+
+End-to-end automation
+
+Playwright UI tests
+
+Dashboard smoke tests
+
+Regression suite
+
+CI/CD and GitHub
+
+GitHub Actions
+
+Test reports
+
+Quality gates
+
+Executive portfolio presentation
+
+Screenshots
+
+Architecture
+
+Demo video
+
+Business value presentation
+
+
+cd ~/Documents/Repo/AIApps
+
+mkdir -p AI-Quality-Engineering-Lab
+
+cd AI-Quality-Engineering-Lab
+
+mkdir -p \
+  02-Playwright-Automation \
+  03-AI-Test-Case-Generator \
+  04-AI-Defect-Analyzer \
+  05-AI-Test-Triage-Agent \
+  06-AI-Release-Risk-Predictor \
+  07-Documentation
+cd 01-AI-Executive-Dashboard
+python3 -m venv .venv
+
+source .venv/bin/activate
+
 AI Quality Engineering Lab
 AI Quality Engineering Lab
 
@@ -1172,3 +1262,19 @@ Disclaimer
 
 This is a demonstration project using synthetic data. Risk scoring and AI recommendations are illustrative and must be validated against real organizational requirements before production use.  # ai-executive-quality-dashboard
 # ai-executive-quality-dashboard
+
+***RUNTEST****
+pip install pytest pytest-cov ruff
+python -m pytest tests/ -v
+
+python -m pytest tests/ -v --cov=src --cov-report=term-missing
+
+
+ruff check .
+
+tests/
+├── conftest.py
+├── test_analytics.py
+├── test_risk_engine.py
+├── test_data_loader.py
+└── test_ai_advisor.py
