@@ -1,5 +1,24 @@
 ##EXEC DASHBOARD
 
+HOW TO RUN 
+
+cd /Users/arulmanii/Documents/Repo/AIApps/ai-executive-quality-dashboard
+pip install -r requirements.txt
+ OPENAI_API_KEY=your_actual_api_key
+
+ http://localhost:8501
+ Local URL: http://localhost:8501
+
+ 
+  Network URL: http://10.177.177.194:8501
+
+
+  $ xcode-select --install
+  $ pip install watchdog
+
+  streamlit run app.py
+
+
 ***RUN TEST
 python -m pytest tests/ -v
 python -m pytest tests/test_risk_engine.py::test_medium_risk -v
@@ -12,6 +31,7 @@ python -m pytest tests/ -v
 python -m compileall -q app.py src config tests
 
 streamlit run app.py
+
 ***
 
 Project delivery roadmap
